@@ -1,0 +1,51 @@
+YARGS
+Yargs es una librería muy popular y usada dentro del mundo JavaScript, con la cual, 
+podemos parsear(Analizar) parámetros de nuestra aplicación hecha en NodeJs desde la consola de comandos. 
+
+
+INSTALAR YARGS
+En nuestro proyecto de Node, desde la terminal, lo instalamos de la siguiente forma
+
+npm install --save yargs
+Uso de Yargs
+Importamos el módulo
+
+const arg = require('yargs').argv
+Para obtener los valores pasados por consola de la siguiente forma
+
+const arg = require('yargs').argv
+
+console.log(arg.parametro)
+Suponiendo que el comando se ejecutó de cualquiera de las siguientes maneras
+
+node index --parametro=10
+node index --parametro 10
+El resultado del console.log sería de 10.
+
+
+
+DEFINIR COMANDOS Y OPCIONES
+
+Un comando es aquel que ejecuta una acción y que puede recibir o no opciones adicionales. 
+Una opción es solo un parámetro y su valor. Las opciones pueden ser parte de un comando como también pueden ir independientes.
+
+Un comando tiene la forma:
+
+npm index listar --desde=5 --hasta=10
+
+Donde index sería nuestro archivo, listar es el comando y recibe dos parámetros, desde y hasta.
+
+Una opción es solo un parámetro:
+
+npm index --formato 2
+
+Index es nuestro archivo y formato nuestra opción. Las características sintácticas de los comandos y opciones son:
+
+Los parámetros se definen con dos signos menos (--) antes de la palabra.
+Los comandos van sin los signos menos (--).
+Los comandos pueden o no llevar opciones.
+Las opciones pueden ir sin un comando.
+No se pueden repetir las opciones, ya sea que estén o no dentro de un comando.
+Una opción puede o no llevar valores, si los llevasen, deben ir asignados con el signo igual (=) o con un espacio.
+Las opciones pueden tener una abreviación corta con un signo menos - y una palabra (ejemplo, --desde una abreviación puede ser -d).
+Los comandos también tienen abreviaciones cortas de solo una letra (ejemplo, install una abreviación puede ser i).

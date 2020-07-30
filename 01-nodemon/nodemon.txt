@@ -1,0 +1,3 @@
+Nodemon: es un paquete de "npm" que está al tanto de los cambios que se han realizado en los archivos
+de JS para ejecutarlos. Para instalar nodemon hay que ejecutar el comando: "npm install -g nodemon"
+como administrador. 

@@ -1,0 +1,11 @@
+Colors es una libreria que se instala en nodejs para poder darle color y estilos a las letras por consola
+y también poder definir el color de fondo de la consola. Para instalar color se busca en google "npm colors"
+y se puede ver en la documentación que el comando de instalación es "npm install colors", pero este comando no permite
+que esta dependencia "colors" se registre en el package.json. Para ello, se debe ejecutar el comando 
+"npm install colors --save". De este modo, se crea el package.json y se registra la libreria colors como dependencia
+del proyecto.
+
+
+Una vez instalado la libreria "colors" se importa como se ha venido haciendo como los modulos creados y ya integrados por nodejs
+
+const colors= requiere ('colors')

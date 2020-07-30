@@ -1,0 +1,43 @@
+Antes de instalar el paquete YARGS es necesario ejecutar el comando "npm init"
+en consola con el fin de crear un archivo llamado "package.json".Al ejecutar el comando desde consola se
+solicita asignarle un nombre al package, aunque ya viene uno por defecto.Otra de las propiedades a completar son:
+
+    version: "se puede dejar la versión por defecto o cambiarla" *
+    descripcion: "breve descripción"
+entrypoint: "es el nombre del primer archivo que se ejecuta y despliega toda la aplicación, en este caso el nombre del archivo es app.js"
+test command: "para caso de pruebas,aqui se puede definir el comando de pruebas"
+git repository: "es el repositorio de git, se coloca si se deseae el repositorio de git"
+Keywords: "eb caso que el proyecto se haga publico y se quiera subir a algun lugar como por ejemplo el repositorio del npm"
+author: "el nombre que se quiera poner"
+License: "se deja la que viene por defecto"
+
+
+Luego se puede apreciar que se crea de forma automatica un archivo llamado "package.json"
+No se recomienda modificar este archivo que se ha creado, en caso de modificarse es ncesario
+hacerlo sutilmente
+
+    "El package.json"
+es importante porque permite crear una referencia a las dependencias de librerarias
+y paquetes que la aplicación necesita para ser ejecutada.De este modo, cuando se mueva el proyecto a otro ordenador o
+a un repositorio y tengamos instalado en el proyecto algunas dependencias(librerias y paquetes externos) este archivo permite crear
+una referencia para hacer saber al programa que esa libreria es necesaria para su ejecución.
+
+La primera instalación de un paquete de dependencia es el "YARGS".Para ello, se busca en google "npm yargs"
+para
+saber el comando de instalación("npm i yargs") y ejecutarlo en consola, especificamente en la ruta del archivo "app.js".
+
+Al ejecutar el comando "npm i yargs" se puede apreciar que aparece en consola "+yargs@version"
+esto indica que el paquete se ha instalado correctamente.Inmediatamente haya finalizado la instalación del paquete "yargs"
+aparece en el archivo "package.json" una referencia que hace constar la dependencia de este paquete para ejecutar la aplicación
+Además, se ha creado otro archivo llamado "package-lock.json" este es un archivo que tiene un registro de todo lo que se hizo para poder
+tener instalado yargs en la máquina y, también, se ha creado de forma automatica una carpeta llamada "node modules"
+donde aparecen plugins, es decir, son plugins y paquetes necesarios para que las dependencias que tenemos definidas funcionen.El "node modules"
+no es necesario subirlo a producción ni a los repositorios de git porque las librerias pueden variar de acuerdo al sistema operativo.Cuando otro usuario quiera hacer uso de la aplicación
+ejecuta desde consola "npm install" y esta carpeta se crear de forma desatendida en función del sistema operativo
+
+Ahora por último se instala el "nodemon" como dependencia. Para ello, se busca el google nodemon npm.
+
+Anteriormente se habia instalado nodemon de forma global en el equipo, pero ahora se instala como dependencia de desarrollo 
+con el siguiente comando:[npm install --save-dev nodemon] y automaticamente aparece la referencia de la dependencia en el "package.json"
+
+Por otra parte, si se quiere eliminar alguna dependencia se ejecuta el comando "npm uninstall + "nombre de la dependencia""
