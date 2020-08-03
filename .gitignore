@@ -1,4 +1,6 @@
-
+# A continuación se indica los archivos que se excluyen de ser almacenado en GIT HUB 
+# el crear un archivo ".gitignore" permite indicar los archivos que se pretenden ser excluidos del 
+# de almacenarse en el repositorio de GITHUB
 03-Require/tablas/*.txt
 04-import-archivos/tablas/*.txt
 05-Procces/node_modules

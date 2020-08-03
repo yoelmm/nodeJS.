@@ -1,0 +1,14 @@
+En esta sesión se procede a crear una aplicación asociada a lista de tareas por hacer, listado de tareas (realizadas y por hacer)
+ y actualizar
+
+1ero
+Se ha creado la carpeta con nombre "08-por-hacer" y desde la consola se ha ejecutado el comando "npm init" 
+para crear el archivo de dependencias llamado "package.json"
+
+2do
+Una vez creado el archivo "package.json" se procede a instalar los paquetes "YARGS" y "COLORS" que son las dependencias de este proyecto
+Para instalar los dos paquetes como dependencia se ejecuta el comando: "npm install  yargs colors --save"
+
+3ero 
+Se procede a crear un archivo llamado app.js en el cual se procede a importar los modulos "yargs" y el "colors"
+
