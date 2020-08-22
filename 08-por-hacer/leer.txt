@@ -12,3 +12,26 @@ Para instalar los dos paquetes como dependencia se ejecuta el comando: "npm inst
 3ero 
 Se procede a crear un archivo llamado app.js en el cual se procede a importar los modulos "yargs" y el "colors"
 
+4to
+Se crea una carpeta llamada "config" para poder validar los yargs, dentro de la carpeta se crea
+el archivo llamado "yargs". En este archivo poder definir los comandos y los parámetros que se 
+deben recibir por consola. Además de las caracteristicas de estos parámetros, es decir,
+si son obligatorios o no y si tienen valores por defectos o no
+
+
+5to 
+Se crea una carpeta llamada "por-hacer" donde se importa el módulo integrado por nodeJS llamado "file system (fs)"
+con la finalidad de poder almacenar en un archivo la información recibida por consola sobre las tareas por hacer y 
+sus actualizaciones. Todas las notas de las tareas por hacer se van a guardar en una arreglo dentro del
+archivo "por hacer"
+
+6to
+Se procede a crear una carpeta llamada "db" para poder almacenar las notas de las tareas por hacer
+que se han introducido por consola. En esta carpeta "db" se crear un archivo con formato .json para
+almacenar las descripciones de las tareas por hacer. En el archivo "por-hacer" se procede a crear una funcion
+llamada "guardarDB" que se ejecutará para almacenar en "data.json" las notas de las tareas por hacer
+
+7mo
+Se procede a crear una función llamada "cargarDB" con la finalidad de poder leer la información 
+contenida en el archivo data.json y, de este modo, poder conservar todas las tareas que se agreguen
+
